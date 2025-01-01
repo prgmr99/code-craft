@@ -1,19 +1,20 @@
-# Issue Title: [Short description]
+---
+name: Feature request
+about: Suggest an idea for this project
+title: ''
+labels: ''
+assignees: ''
 
-## Description
+---
 
-A clear and concise description of the issue.
+**Is your feature request related to a problem? Please describe.**
+A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
-## Steps to Reproduce
+**Describe the solution you'd like**
+A clear and concise description of what you want to happen.
 
-1. Step one
-2. Step two
-3. ...
+**Describe alternatives you've considered**
+A clear and concise description of any alternative solutions or features you've considered.
 
-## Expected Behavior
-
-What should happen?
-
-## Additional Context
-
-Add any screenshots, logs, or other context here.
+**Additional context**
+Add any other context or screenshots about the feature request here.
