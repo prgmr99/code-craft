@@ -48,7 +48,7 @@ const EditorPanel = () => {
     const newCode = savedCode || LANGUAGE_CONFIG[language].defaultCode;
 
     if (editor) {
-      editor.setEditor(newCode);
+      setEditor(newCode);
     }
   }, [language, editor, setEditor]);
 
