@@ -5,6 +5,7 @@ import { useState } from "react";
 import { api } from "../../../../../convex/_generated/api";
 import { useMutation } from "convex/react";
 import toast from "react-hot-toast";
+import { X } from "lucide-react";
 
 const ShareSnippetDialog = ({ onClose }: { onClose: () => void }) => {
   const [title, setTitle] = useState("");
