@@ -144,3 +144,7 @@ export const useCodeEditorStore = create<CodeEditorState>((set, get) => {
     },
   };
 });
+
+export const getExecutionResult = () => {
+  return useCodeEditorStore.getState().executionResult;
+};

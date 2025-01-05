@@ -1,16 +1,35 @@
 "use client";
 
-import { useCodeEditorStore } from "@/store/useCodeEditorStore";
+import {
+  getExecutionResult,
+  useCodeEditorStore,
+} from "@/store/useCodeEditorStore";
 import { useUser } from "@clerk/nextjs";
+import { useMutation } from "convex/react";
 import { motion } from "framer-motion";
 import { Loader2, Play } from "lucide-react";
+import { api } from "../../../../../convex/_generated/api";
 
 const RunButton = () => {
   const { user } = useUser();
-  const { language, isRunning, executionResult, runCode } =
-    useCodeEditorStore();
+  const { language, isRunning, runCode } = useCodeEditorStore();
+  const saveExecution = useMutation(api.codeExecutions.saveExecution);
 
-  const handleRunCode = async () => {};
+  const handleRunCode = async () => {
+    await runCode();
+
+    const result = getExecutionResult();
+
+    if (user && result) {
+      // todo: save the result to convex
+      await saveExecution({
+        language,
+        code: result.code,
+        output: result.output || undefined,
+        error: result.error || undefined,
+      });
+    }
+  };
 
   return (
     <motion.button
