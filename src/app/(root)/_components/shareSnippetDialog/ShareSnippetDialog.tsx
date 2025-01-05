@@ -6,8 +6,10 @@ import { api } from "../../../../../convex/_generated/api";
 import { useMutation } from "convex/react";
 import toast from "react-hot-toast";
 import { X } from "lucide-react";
+import useMounted from "@/hooks/useMounted";
 
 const ShareSnippetDialog = ({ onClose }: { onClose: () => void }) => {
+  const isMounted = useMounted();
   const [title, setTitle] = useState("");
   const [isSharing, setIsSharing] = useState(false);
   const { language, getCode } = useCodeEditorStore();
@@ -31,6 +33,8 @@ const ShareSnippetDialog = ({ onClose }: { onClose: () => void }) => {
       setIsSharing(false);
     }
   };
+
+  if (!isMounted) return null;
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
