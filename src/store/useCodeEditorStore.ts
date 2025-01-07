@@ -28,6 +28,7 @@ const getInitialState = () => {
 
 export const useCodeEditorStore = create<CodeEditorState>((set, get) => {
   const initialState = getInitialState();
+
   return {
     ...initialState,
     output: "",
