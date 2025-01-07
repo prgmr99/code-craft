@@ -1,9 +1,14 @@
 "use client";
 
+import useMounted from "@/hooks/useMounted";
 import { SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import { User } from "lucide-react";
 
 const HeaderProfileButton = () => {
+  const isMounted = useMounted();
+
+  if (!isMounted) return null;
+
   return (
     <>
       <UserButton>

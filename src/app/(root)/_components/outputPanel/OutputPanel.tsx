@@ -11,10 +11,12 @@ import {
 } from "lucide-react";
 
 import RunningCodeSkeleton from "../skeleton/runningCodeSkeleton/RunningCodeSkeleton";
+import useMounted from "@/hooks/useMounted";
 
 function OutputPanel() {
   const { output, error, isRunning } = useCodeEditorStore();
   const [isCopied, setIsCopied] = useState(false);
+  const isMounted = useMounted();
 
   const hasContent = error || output;
 
@@ -25,6 +27,8 @@ function OutputPanel() {
 
     setTimeout(() => setIsCopied(false), 2000);
   };
+
+  if (!isMounted) return null;
 
   return (
     <div className="relative bg-[#181825] rounded-xl p-4 ring-1 ring-gray-800/50">

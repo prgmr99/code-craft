@@ -9,9 +9,11 @@ import { useMutation } from "convex/react";
 import { motion } from "framer-motion";
 import { Loader2, Play } from "lucide-react";
 import { api } from "../../../../../convex/_generated/api";
+import useMounted from "@/hooks/useMounted";
 
 const RunButton = () => {
   const { user } = useUser();
+  const isMounted = useMounted();
   const { language, isRunning, runCode } = useCodeEditorStore();
   const saveExecution = useMutation(api.codeExecutions.saveExecution);
 
@@ -30,6 +32,8 @@ const RunButton = () => {
       });
     }
   };
+
+  if (!isMounted) return null;
 
   return (
     <motion.button
