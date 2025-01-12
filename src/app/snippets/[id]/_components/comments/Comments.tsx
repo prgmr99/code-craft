@@ -5,8 +5,8 @@ import toast from "react-hot-toast";
 import { MessageSquare } from "lucide-react";
 import { Id } from "../../../../../../convex/_generated/dataModel";
 import { api } from "../../../../../../convex/_generated/api";
-import Comment from "./Comment";
-import CommentForm from "./CommentForm";
+import CommentForm from "../commentForm/CommentForm";
+import Comment from "../comment/Comment";
 
 function Comments({ snippetId }: { snippetId: Id<"snippets"> }) {
   const { user } = useUser();
