@@ -11,7 +11,7 @@ import Image from "next/image";
 import SnippetCard from "./_components/snippetCard/SnippetCard";
 
 const SnippetsPage = () => {
-  const snippets = useQuery(api.snippet.getSnippets);
+  const snippets = useQuery(api.snippets.getSnippets);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState<string | null>(null);
   const [view, setView] = useState<"grid" | "list">("grid");
@@ -121,6 +121,8 @@ const SnippetsPage = () => {
                     src={`/${lang}.png`}
                     alt={lang}
                     className="w-4 h-4 object-contain"
+                    width={16}
+                    height={16}
                   />
                   <span className="text-sm">{lang}</span>
                 </div>

@@ -11,10 +11,12 @@ import { motion } from "framer-motion";
 import { Clock, Trash2, User } from "lucide-react";
 import toast from "react-hot-toast";
 import StarButton from "@/components/starButton/StarButton";
+import useMounted from "@/hooks/useMounted";
 
 function SnippetCard({ snippet }: { snippet: Snippet }) {
   const { user } = useUser();
-  const deleteSnippet = useMutation(api.snippet.deleteSnippet);
+  const isMounted = useMounted();
+  const deleteSnippet = useMutation(api.snippets.deleteSnippet);
   const [isDeleting, setIsDeleting] = useState(false);
 
   const handleDelete = async () => {
@@ -29,6 +31,8 @@ function SnippetCard({ snippet }: { snippet: Snippet }) {
       setIsDeleting(false);
     }
   };
+
+  if (!isMounted) return null;
 
   return (
     <motion.div

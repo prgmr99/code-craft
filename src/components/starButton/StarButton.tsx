@@ -8,9 +8,9 @@ import { Id } from "../../../convex/_generated/dataModel";
 function StarButton({ snippetId }: { snippetId: Id<"snippets"> }) {
   const { isSignedIn } = useAuth();
 
-  const isStarred = useQuery(api.snippet.isSnippetStarred, { snippetId });
-  const starCount = useQuery(api.snippet.getSnippetStarCount, { snippetId });
-  const star = useMutation(api.snippet.starSnippet);
+  const isStarred = useQuery(api.snippets.isSnippetStarred, { snippetId });
+  const starCount = useQuery(api.snippets.getSnippetStarCount, { snippetId });
+  const star = useMutation(api.snippets.starSnippet);
 
   const handleStar = async () => {
     if (!isSignedIn) return;
