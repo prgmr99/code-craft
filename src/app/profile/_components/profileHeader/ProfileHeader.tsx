@@ -1,3 +1,4 @@
+// @next/next/no-img-element
 import { useQuery } from "convex/react";
 
 import {
