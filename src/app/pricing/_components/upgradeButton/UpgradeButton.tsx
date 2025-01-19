@@ -2,7 +2,7 @@ import { Zap } from "lucide-react";
 import Link from "next/link";
 
 const CHEKOUT_URL =
-  "https://ytprogrammingstore.lemonsqueezy.com/buy/d459dddb-a233-4060-9e72-90a1a7740552";
+  "https://yeomcraft.lemonsqueezy.com/buy/4e8d8224-b358-44f0-aac0-2c2430026af8";
 
 const UpgradeButton = () => {
   return (
