@@ -5,8 +5,12 @@ import { api } from "../../../convex/_generated/api";
 import ProPlanView from "./_components/proPlanView/ProPlanView";
 import NavigationHeader from "@/components/navigationHeader/NavigationHeader";
 import { Star } from "lucide-react";
-import { ENTERPRISE_FEATURES } from "./_constants";
+import { ENTERPRISE_FEATURES, FEATURES } from "./_constants";
 import { SignedIn, SignedOut } from "@clerk/nextjs";
+import FeatureCategory from "./_components/featureCategory/FeatureCategory";
+import FeatureItem from "./_components/featureItem/FeatureItem";
+import UpgradeButton from "./_components/upgradeButton/UpgradeButton";
+import LoginButton from "@/components/loginButton/LoginButton";
 
 const PricingPage = async () => {
   const user = await currentUser();
