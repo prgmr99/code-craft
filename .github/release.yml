@@ -1,0 +1,23 @@
+changelog:
+  exclude:
+    labels:
+      - Main
+    authors:
+      - octocat
+  categories:
+    - title: New Features Added!
+      labels:
+        - enhancement
+    - title: Minor Bugs Fixed.
+      labels:
+        - bug
+    - title: Improved App Usability.
+      labels:
+        - improvement
+    - title: 🛠️ Working Towards Better Code.
+      labels:
+        - refactor
+        - setting
+    - title: Others
+      labels:
+        - "*"

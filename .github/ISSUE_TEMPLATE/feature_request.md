@@ -1,19 +1,29 @@
-# Issue Title: [Short description]
+# Feature Request
 
-## Description
+## 🚀 What is the feature?
 
-A clear and concise description of the issue.
+_Briefly describe the feature you'd like to see._
 
-## Steps to Reproduce
+---
 
-1. Step one
-2. Step two
-3. ...
+## 🤔 Why do we need it?
 
-## Expected Behavior
+_Explain the problem this feature solves or the value it adds._
 
-What should happen?
+---
 
-## Additional Context
+## 🛠 How might it work?
 
-Add any screenshots, logs, or other context here.
+_Describe a basic implementation idea (if you have one)._
+
+---
+
+## 💡 Any alternatives?
+
+_Mention other approaches or solutions, if any._
+
+---
+
+## 📝 Additional context
+
+_Add any relevant details or links (optional)._
