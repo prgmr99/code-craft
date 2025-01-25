@@ -1,37 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Code Craft
+
+Code Craft is an interactive platform that allows users to write, execute, and share code snippets across various programming languages. It serves as a playground where developers can experiment with code, observe outcomes in real-time, and engage in collaborative discussions.
+
+## Key Features
+
+- **Multi-Language Support**: Write and run code in multiple programming languages, catering to a wide range of development needs.
+
+- **Real-Time Execution**: Execute code snippets instantly and view the results directly within the platform.
+
+- **Code Sharing**: Easily share your code snippets with others through unique URLs, facilitating collaboration and feedback.
+
+- **Collaborative Discussions**: Engage with the community by sharing insights, suggestions, and improvements on shared code snippets.
 
 ## Getting Started
 
-First, run the development server:
+To explore and utilize the features of Code Craft, visit our platform at [https://code-craft-five-fawn.vercel.app/](https://code-craft-five-fawn.vercel.app/).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Usage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Write Code**: Select your desired programming language and input your code in the editor.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Execute**: Run the code to see real-time results and outputs.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Share**: Generate a unique link to your code snippet and share it with peers or the community.
 
-## Learn More
+4. **Discuss**: Participate in discussions by providing feedback or suggestions on shared code snippets.
 
-To learn more about Next.js, take a look at the following resources:
+## Contribution
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+We welcome contributions to enhance the platform's functionality and user experience. If you're interested in contributing, please fork the repository, make your changes, and submit a pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# code-craft
+This project is licensed under the MIT License.
